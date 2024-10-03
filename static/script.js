@@ -7,7 +7,7 @@ const GUI = {
 
 
 GUI.goButton.addEventListener('click',async ()=>{
-    let query = GUI.searchBar.value;
+    let query = GUI.searchBar.innerText;
 
     let url = await (await fetch('/streamUrl',{
         body:JSON.stringify({query}),

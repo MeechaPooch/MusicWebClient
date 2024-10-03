@@ -4,30 +4,33 @@
 
 <head>
     <title>'Spotify'</title>
-</head>
+    <link rel="manifest" href="/manifest.json">
+    <link href="style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/pink.jpg">
 
-<link href="style.css" rel="stylesheet">
+</head>
 
 <body>
 
-<!-- code here! -->
+    <!-- code here! -->
 
 
-<h1>'Spotify'</h1>
+    <h1>'Spotify'</h1>
 
 
-<ui>
-    <span>
-<input type="text" id="searchbar" placeholder="song search">
-<button id="gobutton">Play</button>
-</span>
-<audio id="audioplayer" controls>
-    <source id="mp3source" type="audio/mpeg">
-  Your browser does not support the audio element.
-  </audio>
+    <ui>
+        <span class="searchspan">
+            <searchbar contenteditable="true" type="text" id="searchbar" placeholder="song search"></searchbar>
+            <button id="gobutton">Play</button>
+        </span>
+        <audio id="audioplayer" controls>
+            <source id="mp3source" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-</ui>
+    </ui>
 </body>
 
 <script src="script.js"></script>
+
 </html>

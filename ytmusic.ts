@@ -4,8 +4,9 @@ const ytMusic = new YTMusic();
 await ytMusic.initialize();
 
 export async function getVideoUrl(query:string) {
-    let list = await ytMusic.search(query);
-    let vid = list.filter((item)=>item.type.toLowerCase()=='video')[0];
+    let list = await ytMusic.searchSongs(query);
+    console.log(list)
+    let vid = list.filter((item)=>item.type.toLowerCase()=='song')[0];
     console.log(vid)
     return `https://www.youtube.com/watch?v=${(vid as any).videoId}`
     // if(!vid) {
@@ -16,5 +17,5 @@ export async function getVideoUrl(query:string) {
     // console.log(mp4)
 }
 
-// console.log(await getVideoUrl('never gonna give you up')) 
+console.log(await getVideoUrl('never gonna give you up')) 
 
