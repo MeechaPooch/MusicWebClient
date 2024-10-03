@@ -1,0 +1,10 @@
+ui{
+
+    display: flex;
+    flex-flow: column;
+    gap:5px;
+    width: fit-content;
+}
+#audioplayer{
+    width:600px;
+}
