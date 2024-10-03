@@ -1,4 +1,4 @@
-import YTMusic from "ytmusic-api";
+import YTMusic from "npm:ytmusic-api";
 
 const ytMusic = new YTMusic();
 await ytMusic.initialize();

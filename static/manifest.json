@@ -1,0 +1,17 @@
+{
+    "name": "'Spotify'",
+    "short_name": "'Spotify'",
+    "theme_color": "#191414",
+    "background_color": "#191414",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://https://git-spotify-43v71373qg83.deno.dev/",
+    "description": "Self hosted spotify",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://https://git-spotify-43v71373qg83.deno.dev/img/pink.jpg",
+            "sizes": "736x736"
+        }
+    ]
+}

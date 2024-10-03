@@ -1,11 +1,11 @@
-import express from 'express'
-import bodyParser from 'body-parser';
-import YTMusic from 'ytmusic-api';
-import ffmpeg from 'ffmpeg'
-import ytdl from 'ytdl-core';
-import ytstream from 'yt-stream'
-import fs from 'fs'
-import { getVideoUrl } from './ytmusic';
+import express from 'npm:express'
+import bodyParser from 'npm:body-parser';
+import YTMusic from 'npm:ytmusic-api';
+import ffmpeg from 'npm:ffmpeg'
+import ytdl from 'npm:ytdl-core';
+import ytstream from 'npm:yt-stream'
+// import fs from 'fs'
+import { getVideoUrl } from './ytmusic.ts';
 
 let app = express();
 app.use(express.static('static'))
